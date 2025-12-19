@@ -29,6 +29,17 @@
   pad(x: length, y: length, body)
 }
 
+////// For vcard
+
+#let to-cut-top(body) = {
+  pad(top: bleed, x: bleed, body)
+}
+
+#let to-cut-bottom(body) = {
+  pad(bottom: bleed, x: bleed, body)
+}
+
+
 //// Layout
 
 #let setup(it) = {
@@ -69,3 +80,24 @@
     inside-right
   )
 }
+
+#let vcard(front:[], inside-top:[], inside-bottom:[], back:[]) = {
+  grid(
+    columns: (1fr),
+    rows: (1fr, 1fr),
+    align: (horizon, horizon),
+    rotate(180deg, front),
+    back
+  )
+
+  pagebreak()
+
+  grid(
+    columns: (1fr),
+    rows: (1fr, 1fr),
+    align: (horizon, horizon),
+    inside-top,
+    inside-bottom
+  )
+}
+

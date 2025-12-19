@@ -119,6 +119,44 @@ A `block` can be used to clip an image to allow for zooming.  Pan the image befo
 )
 ```
 
+# Vertical Folding Cards
+
+To support cards that fold down (vertically), change the values in card_param.typ to use portrait and double the hight rather than the width like so:
+
+```typst
+// How far past cut lines we want to print
+#let bleed = 9pt
+
+// us-letter portrait
+#let stock-width = 8.5in
+#let stock-height = 11in
+
+// Double height for horizontal fold
+#let content-height = 4in*2
+#let content-width = 6in
+```
+
+Then, change `card()` to `vcard()`.
+
+NOTE: The parameters are different.
+
+```typst
+#vcard(
+    front:[],
+    inside-top:[],
+    inside-bottom:[],
+    back:[]
+)
+```
+
+It might be easier to start with a working example.  This exists in the `vcard` branch of the repository on GitHub.
+
+```sh
+git clone https://github.com/cskeeters/typst-cardly
+cd typst-cardly
+git switch vcard
+```
+
 # Attribution
 
 "Christmas Santa And Reindeer SVG" icon by soco-st is licensed under CC BY 4.0.
