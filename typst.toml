@@ -1,0 +1,7 @@
+[package]
+name = "cardly"
+version = "0.1.0"
+authors = ["Chad Skeeters"]
+license = "MIT"
+description = "Template for creating custom greeting cards"
+exclude = ["thumbnail.svg", "DEV.md", "main1.svg", "main2.svg"]
