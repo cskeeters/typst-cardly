@@ -119,9 +119,9 @@ A `block` can be used to clip an image to allow for zooming.  Pan the image befo
 )
 ```
 
-# Vertical Folding Cards
+## Vertical Folding Cards
 
-To support cards that fold down (vertically), change the values in card_param.typ to use portrait and double the hight rather than the width like so:
+To support cards that fold down (vertically), change the values in `card_param.typ` to use portrait and double the height rather than the width like so:
 
 ```typst
 // How far past cut lines we want to print
@@ -149,13 +149,7 @@ NOTE: The parameters are different.
 )
 ```
 
-It might be easier to start with a working example.  This exists in the `vcard` branch of the repository on GitHub.
-
-```sh
-git clone https://github.com/cskeeters/typst-cardly
-cd typst-cardly
-git switch vcard
-```
+An example is located in the `vcard` folder.
 
 # Attribution
 
