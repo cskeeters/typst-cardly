@@ -21,15 +21,19 @@
 
   inside-left: [],
 
-  inside-right: to-cut-right(top-third({
+  inside-right: to-cut-right(margin(length: 10mm, top-third({
     align(center)[
-      Wishing you a Merry Christmas filled with joy, love, and cherished moments. May the magic of the season warm your heart and light your way into a wonderful New Year!
+      Wishing you a Merry Christmas filled with
+      joy, love, and cherished moments.
+
+      May the magic of the season warm your heart
+      and light your way into a wonderful New Year!
     ]
     pad(left: 50%)[
       Love,\
       Chad
     ]
-  })),
+  }))),
 
   back: to-cut-left(margin(length: 3mm, {
     align(center,{
