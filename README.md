@@ -86,7 +86,7 @@ To add additional margin, use `margin(length: 1cm, content)`.
 `top-third(content)`: Centers around the top third of the page
 `centered(content)`: horizontally centers the content
 
-## Tiling background
+## Tiling Background
 
 ```typst
 #card(
